@@ -1,0 +1,121 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+
+.main{
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+   padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.main h2{
+    margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.main .box{
+    position: relative;
+}
+
+.main .box label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.main .box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.main .box input:focus ~ label,
+.main .box input:valid ~ label
+{
+  top: -20px;
+  left: 0;
+  color: #1ab188;
+  font-size: 14px;
+}
+
+
+.wrong{
+    color: #d61212;
+}
+
+.main .box-wrong input:focus ~ label,
+.main .box-wrong input:valid ~ label,
+.main .box-wrong input:invalid ~ label
+{
+    top: -20px;
+    left: 0;
+    color: #d61212;;
+    font-size: 14px;
+}
+
+  
+
+.submit {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1ab188;;
+    position: relative;
+    display: inline-block;
+    color: #d6eaeb;
+    font-size: 16px;
+    padding: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.1s;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    align-items: center;
+}
+
+.incorrect{
+    background-color: #d61212;
+}
+
+
+
+.left{
+    transform: translate(-150%,-50%);
+}
+
+.right{
+    transform: translate(50%,-50%);
+}
+.incorrect{
+}
